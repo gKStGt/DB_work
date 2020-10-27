@@ -36,7 +36,7 @@ INSERT INTO cats(age,name) VALUES (29, "Grizabella");
 // Daten in Tabelle schreiben (3)
 INSERT INTO cats VALUES ("Rum Tum Tugger", 40);
 
-// Daten in Tabelle schreiben (4) (LLER)
+// Daten in Tabelle schreiben (4) (LEER)
 INSERT INTO cats VALUES ();
 
 //--> Leere Daten werden mit NULL dargestellt
