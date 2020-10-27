@@ -7,6 +7,5 @@ CREATE DATABASE boo;
 // Datenbank auswählen
 USE boo;
 
-// Datenbank auswählen
-// Dann ist alles weg!
+// DB löschen --> Dann ist alles weg!
 DROP DATABASE boo; 
