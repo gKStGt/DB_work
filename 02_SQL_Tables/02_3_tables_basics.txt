@@ -31,5 +31,5 @@ INSERT INTO cats (name,age) VALUES ("Gus",45);
 INSERT INTO cats (name,age) VALUES ("Gus",40);DELETE
 INSERT INTO cats (name,age) VALUES ("Grizabella",29);
 INSERT INTO cats (name,age) VALUES ("Alonzo",35);
-INSERT INTO cats (name,age) VALUES ();
+
 
