@@ -66,10 +66,16 @@ VALUES
 ("Alonzo", 35),
 ("Grizabella", 29);
 
+INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  ("Grizabella", 29);
+
 //--> SQL Error
 INSERT INTO cats VALUES ("Das ist ein viiiiiiieeel zu langer string",10);
 
 //--> SQL Error
 INSERT INTO cats VALUES ("Test",10.01);
+
+// Inhalte löschen
+DELETE FROM cats;
+
 
 
