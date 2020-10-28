@@ -30,7 +30,7 @@ INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  
 //--> SQL Error
 INSERT INTO cats VALUES ("Das ist ein viiiiiiieeel zu langer string",10);
 
-// Inhalte löschen
+// Inhalte loeschen
 DELETE FROM cats;
 
 
