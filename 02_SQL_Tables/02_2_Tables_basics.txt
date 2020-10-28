@@ -1,0 +1,37 @@
+//--------------------------------------------//
+
+// Tabelle anlegen (3)
+CREATE TABLE cats
+(
+	name VARCHAR(20) NOT NULL,
+	age INT NOT NULL
+);
+
+// Tabelle anlegen (4)
+CREATE TABLE cats
+(
+	name VARCHAR(20) NOT NULL DEFAULT "BOO",
+	age INT NOT NULL DEFAULT 0
+);
+
+//--------------------------------------------//
+
+// Mehrfach-Eingabe von Daten (1)
+INSERT INTO cats
+(name,age)
+VALUES
+("Rum Tum Tugger", 40),
+("Alonzo", 35),
+("Grizabella", 29);
+
+// Mehrfach-Eingabe von Daten (2)
+INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  ("Grizabella", 29);
+
+//--> SQL Error
+INSERT INTO cats VALUES ("Das ist ein viiiiiiieeel zu langer string",10);
+
+// Inhalte löschen
+DELETE FROM cats;
+
+
+

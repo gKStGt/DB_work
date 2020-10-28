@@ -1,3 +1,5 @@
+
+// Tabelle mit ohne KEY --> Duplikate möglich
 CREATE TABLE cats
 (
 	name VARCHAR(20) NOT NULL DEFAULT "BOO",
@@ -6,6 +8,8 @@ CREATE TABLE cats
 
 INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  ("Grizabella", 29);drop 
 
+// Tabelle mit id als PRIMARY KEY --> KEINE Duplikate möglich
+// ABER: Manuelles Setzen der id erforderlich
 
 CREATE TABLE cats
 (
@@ -19,6 +23,9 @@ INSERT INTO cats VALUES (0,"Gus",45);
 INSERT INTO cats VALUES (1,"Gus",40);
 INSERT INTO cats VALUES (2,"Grizabella",29);
 INSERT INTO cats VALUES (3,"Alonzo",35);
+
+// Tabelle mit AUTO INCREMENT
+// id wird automatisch inkrementieret (i++)
 
 CREATE TABLE cats
 (

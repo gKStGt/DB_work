@@ -15,7 +15,7 @@ CREATE TABLE cats
 	age INT
 );
 
-// Tabelle anlegen (2)
+// Tabelle anlegen - in einer Zeile (2)
 CREATE TABLE cats(name VARCHAR(20),age INT);
 
 // Struktur der Tabelle anzeigen
@@ -23,6 +23,8 @@ DESC cats;
 
 // Tabelle loeschen
 DROP TABLE cats;
+
+//--------------------------------------------//
 
 // Daten in Tabelle schreiben (1)
 INSERT INTO cats(name,age) VALUES ("Alonzo",35);
@@ -41,41 +43,5 @@ INSERT INTO cats VALUES ();
 
 //--> Leere Daten werden mit NULL dargestellt
 
-//Tabelle löschen
+//Tabelle loeschen
 DROP TABLE cats;
-
-// Tabelle anlegen (3)
-CREATE TABLE cats
-(
-	name VARCHAR(20) NOT NULL,
-	age INT NOT NULL
-);
-
-// Tabelle anlegen (4)
-CREATE TABLE cats
-(
-	name VARCHAR(20) NOT NULL DEFAULT "BOO",
-	age INT NOT NULL DEFAULT 0
-);
-
-// Mehrfach-Eingabe
-INSERT INTO cats
-(name,age)
-VALUES
-("Rum Tum Tugger", 40),
-("Alonzo", 35),
-("Grizabella", 29);
-
-INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  ("Grizabella", 29);
-
-//--> SQL Error
-INSERT INTO cats VALUES ("Das ist ein viiiiiiieeel zu langer string",10);
-
-//--> SQL Error
-INSERT INTO cats VALUES ("Test",10.01);
-
-// Inhalte löschen
-DELETE FROM cats;
-
-
-
