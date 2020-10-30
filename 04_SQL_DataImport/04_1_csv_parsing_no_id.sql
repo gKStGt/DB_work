@@ -21,7 +21,7 @@ INTO TABLE cats
 FIELDS TERMINATED BY ","
 LINES TERMINATED BY "\n"
 IGNORE 1 LINES
-(name, fur_color,age);
+(name,fur_color,age);
 
 SELECT * FROM cats;
 
