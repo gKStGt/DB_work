@@ -66,8 +66,8 @@ ORDER BY industry ASC, price DESC;
 LIMIT 100;
 */
 
-/*
 -- Eingrenzen/Filtern WHERE & RegEx
+/*
 SELECT 
     c_name "Unternehmen",
 FROM stocks.ccc_list
@@ -75,8 +75,8 @@ WHERE c_name RLIKE "^[AZ]"
 ORDER BY c_name
 */
 
-/*
 -- Eingrenzen/Filtern WHERE & IN / NOT IN 
+/*
 SELECT 
     ticker "SYM",
     c_name "Unternehmen",
@@ -88,8 +88,8 @@ WHERE sector = "Financials" AND industry NOT IN ("Banks","Insurance")
 ORDER BY industry DESC;
 */
 
-/*
 -- Eingrenzen/Filtern WHERE & BETWEEN / NOT BETWEEN 
+/*
 SELECT 
     ticker "SYM",
     c_name "Unternehmen",
