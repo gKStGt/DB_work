@@ -9,6 +9,7 @@ system clear;
     LOWER() --> alles in Kleinbuchstaben
     LENGHT() --> String-Länge 
     REPLACE()--> Ersetzen von Stringanteilen
+    TRIM() --> Trimmen vor/nach String (Whitespace)
 */
 
 -- CONCAT() / Verknüpfung "string " + "string" ...
@@ -52,6 +53,7 @@ LIMIT 20;
 */
 
 -- REPLACE()--> Ersetzen von Stringanteilen
+/*
 SELECT
     ticker "SYM",
     c_name "Unternehmen",
@@ -67,6 +69,23 @@ SELECT
 FROM stocks.ccc_list
 WHERE c_name LIKE "%Incorporated"
 LIMIT 30;
+*/
+
+-- TRIM() --> Trimmen vor/nach String (Whitespace)
+
+UPDATE ccc_list SET c_name = CONCAT ("   ",c_name) WHERE id = 2;
+UPDATE ccc_list SET c_name = CONCAT ("   ",c_name) WHERE id = 3;
+
+
+SELECT
+    ticker "SYM",
+    ^#c_name "Unternehmen",
+    TRIM("   " FROM c_name) "Unternehmen"
+FROM stocks.ccc_list
+LIMIT 30;
+
+
+
 
 
 
