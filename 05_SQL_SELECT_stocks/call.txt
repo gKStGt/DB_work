@@ -10,5 +10,8 @@ source 05_SQL_SELECT_stocks/05_2_que_basics.sql;
 source 05_SQL_SELECT_stocks/05_3_que_sort.sql;
 source 05_SQL_SELECT_stocks/05_4_que_where.sql;
 source 05_SQL_SELECT_stocks/05_5_que_stringf.sql;
+
 source 05_SQL_SELECT_stocks/05_6a_que_distinct.sql;
 source 05_SQL_SELECT_stocks/05_6b_que_count.sql;
+source 05_SQL_SELECT_stocks/05_6c_que_min_max.sql;
+
