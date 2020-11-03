@@ -56,16 +56,17 @@ ORDER BY Firmenanzahl DESC;
 */
 
 -- Wieviele Untenhmen zahlen 12/4/2/1 ??
+/*
 SELECT 
     payouts "Auszahlungen p.a.",
     COUNT(payouts) "Anzahl"
 FROM stocks.ccc_list
 GROUP BY payouts
 ORDER BY payouts DESC;
-
+*/
 
 -- Welche Untenhmen zahlen 12/4/2/1 ??
-
+/*
 SELECT 
     ticker "SYM",
     c_name "Unternhmen",
@@ -73,7 +74,7 @@ SELECT
 FROM stocks.ccc_list
 WHERE payouts = 12
 ORDER BY sector ASC;
-
+*/
 
 
 
