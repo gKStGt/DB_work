@@ -4,15 +4,15 @@ use stocks;
 system clear;
 
 /*
-    CONCAT() / Verknüpfung "string " + "string" ...
+    CONCAT() / Verkn체pfung "string " + "string" ...
     UPPER() --> alles in Grosbuchstaben
     LOWER() --> alles in Kleinbuchstaben
-    LENGHT() --> String-Länge 
+    LENGHT() --> String-L채nge 
     REPLACE()--> Ersetzen von Stringanteilen
     TRIM() --> Trimmen vor/nach String (Whitespace)
 */
 
--- CONCAT() / Verknüpfung "string " + "string" ...
+-- CONCAT() / Verkn체pfung "string " + "string" ...
 /*
 SELECT
     ticker "SYM",
@@ -35,13 +35,13 @@ LIMIT 10;
 /*
 SELECT
     ticker "SYM",
-    LOWER (c_name) "Unternehmen",
+    LOWER (c_name) "Unternehmen"
 FROM stocks.ccc_list
 LIMIT 20;
 */
 
--- LENGHT() --> String-Länge 
-^/*
+-- LENGHT() --> String-L채nge 
+/*
 SELECT
     ticker "SYM",
     LOWER (c_name) "Unternehmen",
@@ -53,10 +53,10 @@ LIMIT 20;
 */
 
 -- REPLACE()--> Ersetzen von Stringanteilen
-/*
+
 SELECT
     ticker "SYM",
-    c_name "Unternehmen",
+    c_name "Unternehmen"
 FROM stocks.ccc_list
 WHERE c_name LIKE "%INC."
 LIMIT 30;
@@ -65,14 +65,14 @@ UPDATE ccc_list SET c_name = REPLACE(c_name, "Inc.", "Incorporated");
 
 SELECT
     ticker "SYM",
-    c_name "Unternehmen",
+    c_name "Unternehmen"
 FROM stocks.ccc_list
 WHERE c_name LIKE "%Incorporated"
 LIMIT 30;
-*/
+
 
 -- TRIM() --> Trimmen vor/nach String (Whitespace)
-
+/*
 UPDATE ccc_list SET c_name = CONCAT ("   ",c_name) WHERE id = 2;
 UPDATE ccc_list SET c_name = CONCAT ("   ",c_name) WHERE id = 3;
 
@@ -83,10 +83,4 @@ SELECT
     TRIM("   " FROM c_name) "Unternehmen"
 FROM stocks.ccc_list
 LIMIT 30;
-
-
-
-
-
-
-
+*/

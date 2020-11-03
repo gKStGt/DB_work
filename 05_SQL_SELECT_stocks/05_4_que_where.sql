@@ -48,7 +48,7 @@ FROM stocks.ccc_list
 -- unschärfere Suche 
 #WHERE industry LIKE "Entertainment"
 -- Branchenname beginnt mit ..., dahinter beliebige Chars
-#WHERE industry LIKE "AIR%"
+WHERE industry LIKE "AIR%"
 -- Branchenname endet mit ..., davor beliebige Chars
 #WHERE industry LIKE "%ment"
 -- Branchenname enthält...,
@@ -63,7 +63,7 @@ FROM stocks.ccc_list
 WHERE industry LIKE "%ment" AND industry NOT LIKE "%ipment" AND industry NOT LIKE "%tain%"
 
 ORDER BY industry ASC, price DESC;
-LIMIT 100;
+LIMIT 20;
 */
 
 -- Eingrenzen/Filtern WHERE & RegEx
@@ -89,17 +89,17 @@ ORDER BY industry DESC;
 */
 
 -- Eingrenzen/Filtern WHERE & BETWEEN / NOT BETWEEN 
-/*
+
 SELECT 
     ticker "SYM",
     c_name "Unternehmen",
     industry "Branche",
     price "Aktienpreis"
 FROM stocks.ccc_list
-#WHERE sector = "Financials" AND (price BETWEEN 30.0 AND 50.0)
-WHERE sector = "Financials" AND NOT (price BETWEEN 20.0 AND 250.0)
+WHERE sector = "Financials" AND (price BETWEEN 30.0 AND 50.0)
+#WHERE sector = "Financials" AND NOT (price BETWEEN 20.0 AND 250.0)
 ORDER BY price DESC;
 LIMIT 20;
-*/
+
 
 
