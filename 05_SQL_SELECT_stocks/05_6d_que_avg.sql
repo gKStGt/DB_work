@@ -13,7 +13,7 @@ LIMIT 20;
 */
 
 -- KOMBINATION Preis/ Dividenden
-/*
+
 SELECT
     DISTINCT sector AS "Industriesektor",
     ROUND (AVG(price),2) AS "Durchschnittspreis eienr Aktie",
@@ -23,7 +23,7 @@ GROUP BY sector
 #ORDER BY AVG(price) DESC
 ORDER BY AVG(dividend) DESC
 ;
-*/
+
 
 -- Auszahlungsrhytmus
 /**/
